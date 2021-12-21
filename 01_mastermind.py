@@ -44,3 +44,6 @@
 # Точнее, в этом случае важен принцип единственной ответственности - https://goo.gl/rYb3hT
 
 # TODO здесь ваш код...
+import engine
+
+engine.generate_number()
