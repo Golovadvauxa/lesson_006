@@ -43,12 +43,18 @@
 # Это пример применения SOLID принципа (см https://goo.gl/GFMoaI) в архитектуре программ.
 # Точнее, в этом случае важен принцип единственной ответственности - https://goo.gl/rYb3hT
 
-# TODO здесь ваш код...
-import engine
 
+import engine
+engine.rules()
 engine.generate_number()
-while engine.game_in_progress:
-    input_number=input()
+i = 0
+while True:
+    input_number = input()
     engine.input_user_number(input_number)
     engine.fool_check()
     engine.comparison()
+    i += 1
+    if engine.game_over():
+        break
+
+print('Победа!!!\nЧисло попыток {} '.format(i))
