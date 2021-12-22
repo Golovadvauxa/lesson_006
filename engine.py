@@ -24,8 +24,9 @@ def generate_number():
 
 def comparison(guess_number):
     _user_number = {}
+    # guess_number = str(guess_number)
     for i in range(4):
-        _user_number[i] = guess_number
+        _user_number[i] = int(guess_number[i])
 
     print(_user_number)
 
@@ -35,4 +36,5 @@ def answer():
 
 
 generate_number()
-comparison(3234)
+# x=input()
+# comparison(x)
