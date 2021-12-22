@@ -47,3 +47,8 @@
 import engine
 
 engine.generate_number()
+while engine.game_in_progress:
+    input_number=input()
+    engine.input_user_number(input_number)
+    engine.fool_check()
+    engine.comparison()
